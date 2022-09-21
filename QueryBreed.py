@@ -8,7 +8,7 @@ Last30 = datetime.date.today() - datetime.timedelta(30)
 CurrentDate = datetime.date.today()
 
 #Auth to Pet Finder
-pf = petpy.Petfinder(key="zJ2a8xkrhz9OUmCG0FSDqlmO2cZJtc76o3xhMBYlMxm6BFzhF7" , secret="T9QRnte2ypmPXaanWYHSerpdTIEPrgC2E7E6VlRo")
+pf = petpy.Petfinder(key=key , secret=key)
 
 #Get 50 Results of adoptable dogs
 adoptoable_Dog = pf.animals(animal_type='dog',status='adoptable',results_per_page=50,before_date=str(CurrentDate), after_date=str(Last30))
